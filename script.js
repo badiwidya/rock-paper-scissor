@@ -17,7 +17,16 @@ let userChoice = getUserChoice();
 function playRound(computer, user) {
   const userChoice = String(user).toLocaleLowerCase();
   if (userChoice === "rock") {
-
+    switch (computer) {
+      case "rock":
+        console.log("Tie!");
+        break;
+      case "paper":
+        console.log("You lose! Paper beats Rock.");
+        break;
+      case "scissor":
+        console.log("You win! Rock beats Scissor.");
+    }
   } 
   else if (userChoice === "paper") {
 
