@@ -29,12 +29,30 @@ function playRound(computer, user) {
     }
   } 
   else if (userChoice === "paper") {
-
+    switch (computer) {
+      case "rock":
+        console.log("You win! Paper beats Rock");
+        break;
+      case "paper":
+        console.log("Tie!");
+        break;
+      case "scissor":
+        console.log("You lose! Scissor beats Paper.");
+    }
   } 
   else if (userChoice === "scissor") {
-
+    switch (computer) {
+      case "rock":
+        console.log("You lose! Rock beats Scissor");
+        break;
+      case "paper":
+        console.log("You win! Scissor beats Paper.");
+        break;
+      case "scissor":
+        console.log("Tie!");
+    }
   } 
   else {
-
+    console.log("Your choice is only paper, rock, or scissor!");
   }
 }
