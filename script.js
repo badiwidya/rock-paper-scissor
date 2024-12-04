@@ -10,3 +10,6 @@ function getComputerChoice() {
 function getUserChoice() {
   return prompt("Rock Paper Scissor: ");
 }
+
+let computerChoice = getComputerChoice();
+let userChoice = getUserChoice();
