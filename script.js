@@ -13,3 +13,19 @@ function getUserChoice() {
 
 let computerChoice = getComputerChoice();
 let userChoice = getUserChoice();
+
+function playRound(computer, user) {
+  const userChoice = String(user).toLocaleLowerCase();
+  if (userChoice === "rock") {
+
+  } 
+  else if (userChoice === "paper") {
+
+  } 
+  else if (userChoice === "scissor") {
+
+  } 
+  else {
+
+  }
+}
