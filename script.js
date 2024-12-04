@@ -2,6 +2,11 @@
 
 function getComputerChoice() {
   const choice = ["rock", "paper", "scissor"];
-  return choice[Math.floor(Math.random() * 3 + 1)]
+  return choice[Math.floor(Math.random() * 3 + 1)];
 }
 
+// Get user choice function
+
+function getUserChoice() {
+  return prompt("Rock Paper Scissor: ");
+}
