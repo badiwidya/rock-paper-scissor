@@ -5,8 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0b022a;
+  }
+  button {
+    margin: 15px;
+    padding: 24px 36px;
+    font-size: 24px;
+    color: white;
+    border-radius: 8px;
+    background-color: #4f2ec7;
+    cursor: pointer;
+  }
+  p {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    
+  }
+</style>
 <body>
-  
+  <p id="message"></p>
+  <div class="gamearea">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div>
+  <p id="score-1">Your Score: <span></span></p>
+  <p id="score-2">Computer Score: <span></span></p>
   <script type="module" src="script.js"></script>
 </body>
 </html>
