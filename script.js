@@ -16,6 +16,9 @@ const gameArea = document.querySelector("#gamearea");
 gameArea.addEventListener("click", playGame);
 
 function playGame(e) {
+  if (userScore === 5 || computerScore === 5) {
+    window.location.reload();
+  }
   let userChoice = getUserChoice(e);
   let computerChoice = getComputerChoice();
 
